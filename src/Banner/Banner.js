@@ -61,7 +61,7 @@ const Banner = () => {
 
 <div
   id="carouselExampleCrossfade"
-  class="carousel slide carousel-fade relative mt-[25px] space-x-4  md:space-x-0 mx-[-15px] md:mx-[0px]"
+  class="carousel slide carousel-fade relative mt-[25px] space-x-4  md:space-x-0 mx-[-15px] md:mx-[0px] z-0"
   data-bs-ride="carousel"
 >
   <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 ">

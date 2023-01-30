@@ -31,7 +31,7 @@ const Header = () => {
 
 
   return (
-    <div className='w-screen h-[72px] fixed bg-[#FFFFFF]  drop-shadow-[0_3px_5px_rgba(0,0,0,0.07)]'>
+    <div className='w-screen h-[72px] fixed z-10 bg-[#FFFFFF]  drop-shadow-[0_3px_5px_rgba(0,0,0,0.07)]'>
 
       <div className='px-[24px] flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
