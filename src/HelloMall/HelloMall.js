@@ -13,8 +13,8 @@ import img10 from '../image/white_orange-1603808033192-082d6919d3e1.jpg'
 const HelloMall = () => {
 
     return (
-        <div className='mt-[80px]'>
-        <h1 className='text-[39px] font-semibold'>HelloMall</h1>
+        <div className='mt-[80px] pl-[80px] pr-[170px] md:mt-[150px] mt-[90px]'>
+        <h1 className='text-[39px] font-semibold text-center md:text-justify'>HelloMall</h1>
         <div className='mt-[40px] grid grid-cols-1 md:grid-cols-5  gap-y-8'>
             <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
                 <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img1} alt="" />

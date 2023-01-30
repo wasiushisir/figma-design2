@@ -6,7 +6,7 @@ import { BsFillTagFill} from 'react-icons/bs';
 import React from 'react';
 import FlashSale from '../FlashSale/FlashSale';
 import HelloMall from '../HelloMall/HelloMall';
-import ProductsForYou from '../ProductsForYou/ProductsForYou';
+
 import FeaturedCategories from '../FeaturedCategories/FeaturedCategories';
 import TopSellerrs from '../TopSellers/TopSellerrs';
 import img1 from '../image/scenery1-1604951752791-bb724dd11721.jpg'
@@ -18,11 +18,11 @@ const Banner = () => {
     return (
        <div>
         <Modal></Modal>
-         <div className='pl-[80px] pr-[170px] mt-[150px]'>
+         <div className='pl-[80px] pr-[60px] md:pl-[80px] md:pr-[52px] md:mt-[150px] mt-[90px]'>
             <div className='md:flex justify-between items-center space-y-2 md:space-y-0'>
                 <div className='flex justify-between h-[40px] md:mt-[5px] border border-[#5C738A] rounded-[8px]  bg-[#FFFFFF] w-[230px]   md:w-[760px] mt-[20px]'>
                     <div className=''>
-                        <input className=' text-[#5C738A] font-medium  my-[8px] ml-[16px] outline-none ' type="text" placeholder='Search' />
+                        <input className=' text-[#5C738A] font-medium w-[200px]  my-[8px] ml-[16px] outline-none ' type="text" placeholder='Search' />
                     </div>
                     <div className='bg-[#DE3D3A] w-[40px] flex justify-center items-center rounded-r-[8px]'>
                         <MagnifyingGlassIcon className="md:h-6 h-4 w-4 md:w-6 text-[#FFFFFF] " />
@@ -50,12 +50,85 @@ const Banner = () => {
             </div>
 
 
-            <div className='flex justify-between items-center mt-[25px] space-x-4  md:space-x-0 '>
+            {/* <div className='flex justify-between items-center mt-[25px] space-x-4  md:space-x-0 '>
                 <img className='w-[300px] md:w-[892px] md:h-[383px] rounded-[16px]' src={img1} alt="" />
                 <img className='w-[60px] h-[90px] md:w-[300px] md:h-[383px] mr-[15px] rounded-[16px]' src={img2} alt="" /> 
                 
                 
-            </div>
+            </div> */}
+
+
+
+<div
+  id="carouselExampleCrossfade"
+  class="carousel slide carousel-fade relative mt-[25px] space-x-4  md:space-x-0 mx-[-15px] md:mx-[0px]"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 ">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCrossfade"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCrossfade"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCrossfade"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <div class="carousel-item active float-left w-full">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+        class="block w-[230px] md:w-full md:h-[383px] rounded-[16px]"
+        alt="Wild Landscape"
+      />
+    </div>
+    <div class="carousel-item float-left w-full">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+        class="block w-[230px] md:w-full md:h-[383px] rounded-[16px]"
+        alt="Camera"
+      />
+    </div>
+    <div class="carousel-item float-left w-full">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+        class="block w-[230px] md:w-full md:h-[383px] rounded-[16px]"
+        alt="Exotic Fruits"
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselExampleCrossfade"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselExampleCrossfade"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 
            
 
@@ -142,11 +215,11 @@ const Banner = () => {
 
                 </div>
                 
-                <FlashSale></FlashSale>
-                <FeaturedCategories></FeaturedCategories>
-                <HelloMall></HelloMall>
-                <TopSellerrs></TopSellerrs>
-                <ProductsForYou></ProductsForYou>
+                
+                {/* <FeaturedCategories></FeaturedCategories> */}
+                
+                
+                
                 
 
 

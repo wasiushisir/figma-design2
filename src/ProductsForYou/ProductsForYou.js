@@ -12,11 +12,11 @@ import img10 from '../image/mangojuice-1600271886742-f049cd451bba.jpg'
 
 const ProductsForYou = () => {
     return (
-        <div className='mt-[80px]'>
-        <h1 className='text-[39px] font-semibold'>Products For You</h1>
-        <div className='mt-[40px] grid grid-cols-1 md:grid-cols-5  gap-y-8'>
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img1} alt="" />
+        <div className='mt-[80px] md:pl-[80px] md:pr-[170px] '>
+        <h1 className='text-[39px] font-semibold text-center md:text-justify'>Products For You</h1>
+        <div className='mt-[40px] grid grid-cols-2 md:grid-cols-5 gap-y-8'>
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img1} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal '>Sem turpis eu pulvinar..</p>
                     <span className='font-semibold text-[13px]'>Sit tempus.</span>
@@ -33,8 +33,8 @@ const ProductsForYou = () => {
             </div>
 
 
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img2} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img2} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Consequat facilisi dui fermentum tincidunt.</p>
                     <span className='font-semibold text-[13px]'>Sit eu.</span>
@@ -49,8 +49,8 @@ const ProductsForYou = () => {
 
             </div>
 
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img3} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img3} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Parturient aenean mollis tristique.</p>
                     <span className='font-semibold text-[13px]'>Urna.</span>
@@ -65,8 +65,8 @@ const ProductsForYou = () => {
 
             </div>
 
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img4} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img4} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Platea eget viverra nec vel et fringilla.</p>
                     <span className='font-semibold text-[13px]'>Purus.</span>
@@ -82,8 +82,8 @@ const ProductsForYou = () => {
             </div>
 
 
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img5} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img5} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Quam lectus nibh in..</p>
                     <span className='font-semibold text-[13px]'>Dictum.</span>
@@ -99,8 +99,8 @@ const ProductsForYou = () => {
             </div>
 
 
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img6} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img6} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Faucibus aliquam.</p>
                     <span className='font-semibold text-[13px]'>Integer.</span>
@@ -115,8 +115,8 @@ const ProductsForYou = () => {
 
             </div>
 
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img7} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img7} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Sit velit justo in pharetra feugiat amet.</p>
                     <span className='font-semibold text-[13px]'>Cursus mi.</span>
@@ -130,8 +130,8 @@ const ProductsForYou = () => {
                 </div>
 
             </div>
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img8} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img8} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Et tristique aliquam nullam nulla sed risus.</p>
                     <span className='font-semibold text-[13px]'>Sapien.</span>
@@ -145,8 +145,8 @@ const ProductsForYou = () => {
                 </div>
 
             </div>
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img9} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img9} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Duis egestas nunc volutpat nullam.</p>
                     <span className='font-semibold text-[13px]'>Viverra.</span>
@@ -160,8 +160,8 @@ const ProductsForYou = () => {
                 </div>
 
             </div>
-            <div className='w-[212px] h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] w-[196px] rounded-[8px] mx-[8px] mt-[8px]' src={img10} alt="" />
+            <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
+                <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img10} alt="" />
                 <div className='mx-[16px] mt-[16px]'>
                     <p className='text-base font-normal'>Sed interdum mauris.</p>
                     <span className='font-semibold text-[13px]'>Sed.</span>
