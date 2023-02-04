@@ -13,7 +13,7 @@ import img10 from '../image/mangojuice-1600271886742-f049cd451bba.jpg'
 const ProductsForYou = () => {
     return (
         <div className='mt-[80px] md:pl-[80px] md:pr-[170px] '>
-        <h1 className='text-[39px] font-semibold text-center md:text-justify'>Products For You</h1>
+        <h1 className='text-[39px] font-semibold text-justify'>Products For You</h1>
         <div className='mt-[40px] grid grid-cols-2 md:grid-cols-5 gap-y-8'>
             <div className='w-[170px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
                 <img className='h-[196px] md:w-[196px] w-[154px] rounded-[8px] mx-[8px] mt-[8px]' src={img1} alt="" />

@@ -9,6 +9,8 @@ import ProductsForYou from './ProductsForYou/ProductsForYou';
 import FlashSale from './FlashSale/FlashSale';
 import HelloMall from './HelloMall/HelloMall';
 import TopSellerrs from './TopSellers/TopSellerrs';
+import Slider from './Slider/Slide';
+import Box from './Box/Box';
 
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
     <div className="overflow-x-hidden">
       <Header></Header>
       
+      
       <Banner></Banner>
+      <Slider></Slider>
+      <Box></Box>
       <FlashSale></FlashSale>
       <FeaturedCategories></FeaturedCategories>
       <HelloMall></HelloMall>

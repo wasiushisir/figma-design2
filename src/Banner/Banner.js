@@ -18,7 +18,7 @@ const Banner = () => {
     return (
        <div>
         <Modal></Modal>
-         <div className='pl-[80px] pr-[60px] md:pl-[80px] md:pr-[52px] md:mt-[150px] mt-[90px]'>
+         <div className='pl-[80px] pr-[60px] md:pl-[80px] md:pr-[52px] md:mt-[150px] mt-[100px] md:[60px]'>
             <div className='md:flex justify-between items-center space-y-2 md:space-y-0'>
                 <div className='flex justify-between h-[40px] md:mt-[5px] border border-[#5C738A] rounded-[8px]  bg-[#FFFFFF] w-[230px]   md:w-[760px] mt-[20px]'>
                     <div className=''>
@@ -59,7 +59,7 @@ const Banner = () => {
 
 
 
-<div
+{/* <div
   id="carouselExampleCrossfade"
   class="carousel slide carousel-fade relative mt-[25px] space-x-4  md:space-x-0 mx-[-15px] md:mx-[0px] z-0"
   data-bs-ride="carousel"
@@ -127,7 +127,7 @@ const Banner = () => {
     <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> */}
 
 
            
@@ -135,7 +135,7 @@ const Banner = () => {
 
             {/* skip banner image */}
 
-            <div className='mt-[60px] md:flex justify-between items-center md:space-x-6'>
+            {/* <div className='mt-[60px] md:flex justify-between items-center md:space-x-6'>
                     <div className='w-[200px] md:w-[271px] h-[261px] rounded-[24px] bg-[#FFFFFF] pt-[25px] md:pt-[0px]'>
 
                         <div className=' md:mt-[29px] ml-[29px]  '>
@@ -213,10 +213,10 @@ const Banner = () => {
 
 
 
-                </div>
+                </div> */}
                 
                 
-                {/* <FeaturedCategories></FeaturedCategories> */}
+               
                 
                 
                 

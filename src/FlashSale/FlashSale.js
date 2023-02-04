@@ -9,7 +9,7 @@ import img7 from '../image/white_orange-1603808033192-082d6919d3e1.jpg'
 
 const FlashSale = () => {
     return (
-        <div className='mt-[80px] pl-[80px] pr-[170px] md:mt-[150px] mt-[90px]'>
+        <div className='mt-[80px] pl-[80px] pr-[170px] md:mt-[150px] '>
            <div className='md:flex justify-start items-center md:space-x-7 space-y-2'>
            <h1 className='text-[39px] font-semibold text-center md:text-justify'>Flash Sale</h1>
            <p className='text-[20px] text-[ #2B333B] mt-[5px]'>Ending in</p>
