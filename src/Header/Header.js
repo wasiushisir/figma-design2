@@ -14,8 +14,8 @@ import { createList } from '../actions/sidbarAction';
 const Header = () => {
 
   const dispatch = useDispatch()
-  const state = useSelector((state) => state.list)
-  console.log(state);
+  const state = useSelector((state) =>state.list)
+   console.log(state);
 
   useEffect(() => {
     dispatch(createList())
@@ -163,7 +163,7 @@ const Header = () => {
                   {/* <FolderMinusIcon className="h-4 w-4" /> */}
 
                   <a href={`https://brandatoz.com/search/category/${s}`} rel="noopener noreferrer">
-                    <p className=''>{s}</p>
+                    <p className=''>{s.name}</p>
 
 
                   </a>

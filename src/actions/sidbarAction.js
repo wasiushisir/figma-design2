@@ -2,7 +2,7 @@ import { SIDEBAR_LOAD_LIST } from "../constants/sidebarConstant"
 
 
 export const createList=()=>async(dispatch,getState)=>{
-    const res= await fetch('http://dev.backend.dokanbhai.com:3003/api/add/category?fbclid=IwAR3MZhrgM3TguNcBgmY_LEojFY3bYgrt0YGiS_PEu9Lpt4O6Lrr6WdkDQrE')
+    const res= await fetch('https://jsonplaceholder.typicode.com/users')
     const data=await res.json()
 
     if(data?.length)
@@ -11,3 +11,5 @@ export const createList=()=>async(dispatch,getState)=>{
     }
     
 }
+
+//http://dev.backend.dokanbhai.com:3003/api/add/category?fbclid=IwAR3MZhrgM3TguNcBgmY_LEojFY3bYgrt0YGiS_PEu9Lpt4O6Lrr6WdkDQrE
