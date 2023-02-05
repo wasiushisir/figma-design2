@@ -163,7 +163,7 @@ const Header = () => {
                   {/* <FolderMinusIcon className="h-4 w-4" /> */}
 
                   <a href={`https://brandatoz.com/search/category/${s}`} rel="noopener noreferrer">
-                    <p className=''>{s.name}</p>
+                    <p className=''>{s}</p>
 
 
                   </a>
