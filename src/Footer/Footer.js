@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='w-screen md:h-[356px] bg-[#010203] mt-[20px]'>
             <div className='px-[64px] pt-[80px]'>
-                <div className='space-y-8 md:space-y-0 md:flex justify-between items-start text-[#FFFFFF]'>
+                <div className='space-y-14 pb-[30px] md:pb-[0px] md:space-y-0 md:flex justify-between items-start text-[#FFFFFF]'>
                     <div>
                         <h1 className='text-[20px] md:text-[25px]'>Menu</h1>
                         <div className='mt-[20px] md:mt-[40px] text-[13px] space-y-2'>

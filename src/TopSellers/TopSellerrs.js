@@ -12,8 +12,8 @@ import img10 from '../image/woman5-1534528741775-53994a69daeb.jpg'
 
 const TopSellerrs = () => {
     return (
-        <div className='mt-[80px] pl-[80px] pr-[170px] md:mt-[150px] mt-[90px]'>
-            <h1 className='text-[39px] font-semibold text-center md:text-justify'>Dokan Vai Top Sellers</h1>
+        <div className=' pl-[80px] pr-[170px] md:mt-[150px] mt-[90px]'>
+            <h1 className='md:text-[39px] text-[25px] font-semibold text-center md:text-justify'>Dokan Vai Top Sellers</h1>
             <div className='mt-[40px] grid grid-cols-1 md:grid-cols-8  gap-y-8'>
                 <div className='w-[212px] md:w-[136px] h-[368px] md:h-[232px] rounded-[8px] bg-[#FFFFFF] '>
                     <img className='md:h-[120px] w-[196px] h-[196px] md:w-[120px] rounded-[8px] mx-[8px] mt-[8px]' src={img1} alt="" />

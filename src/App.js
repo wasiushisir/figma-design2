@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Header from './Header/Header';
 import Banner from './Banner/Banner';
 import Footer from './Footer/Footer';
@@ -11,6 +13,7 @@ import HelloMall from './HelloMall/HelloMall';
 import TopSellerrs from './TopSellers/TopSellerrs';
 import Slider from './Slider/Slide';
 import Box from './Box/Box';
+import MonarchSlider from './MonarchSlider/MonarchSlider';
 
 
 function App() {
@@ -19,10 +22,12 @@ function App() {
       <Header></Header>
       
       
-      <Banner></Banner>
+      
       <Slider></Slider>
+      <MonarchSlider></MonarchSlider>
+      <Banner></Banner>
       <Box></Box>
-      <FlashSale></FlashSale>
+      {/* <FlashSale></FlashSale> */}
       <FeaturedCategories></FeaturedCategories>
       <HelloMall></HelloMall>
       <TopSellerrs></TopSellerrs>

@@ -12,7 +12,7 @@ import img9 from '../image/jw3-1608042314453-ae338d80c427.jpg'
 const FeaturedCategories = () => {
     return (
         <div className='mt-[80px] px-[35px] md:pl-[80px] md:pr-[170px]'>
-            <h1 className='text-[39px] font-semibold text-center md:text-justify'>Featured Categories</h1>
+            <h1 className='md:text-[39px] text-[25px] font-semibold text-center md:text-justify'>Featured Categories</h1>
             <div className='mt-[40px] grid grid-cols-2 md:grid-cols-3  gap-y-8'>
                 <div className='w-[145px] h-max md:w-[374px] md:h-[193px] rounded-[8px] md:bg-[#FFFFFF]'>
                     <div className='mt-[16px] px-[10px]'>
