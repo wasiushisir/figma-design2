@@ -22,8 +22,14 @@ const Banner = () => {
             <div className='md:flex justify-between items-center space-y-2 md:space-y-0'>
                 <div className='flex justify-between h-[40px] md:mt-[5px] border border-[#5C738A] rounded-[8px]  bg-[#FFFFFF] w-[230px]   md:w-[760px] mt-[20px]'>
                     <div className=''>
-                        <input className=' text-[#5C738A] font-medium w-[200px]  my-[8px] ml-[16px] outline-none ' type="text" placeholder='Search' />
+                        <input className=' text-[#5C738A] font-medium w-[200px]   md:w-[730px]  py-[7px] ml-[16px] outline-none ' type="text" placeholder='Search' />
                     </div>
+                    
+
+
+
+
+
                     <div className='bg-[#DE3D3A] w-[40px] flex justify-center items-center rounded-r-[8px]'>
                         <MagnifyingGlassIcon className="md:h-6 h-4 w-4 md:w-6 text-[#FFFFFF] " />
 
@@ -33,7 +39,18 @@ const Banner = () => {
 
                 </div>
 
-                <div className='h-[40px] flex justify-between items-center rounded-[8px] bg-[#DE3D3A] px-[15px] w-[230px] text-white font-semibold'>
+
+
+
+
+
+
+
+
+
+
+
+                 <div className='h-[40px] flex justify-between items-center rounded-[8px] bg-[#DE3D3A] px-[15px] w-[230px] text-white font-semibold'>
                     <p>Farmgate</p>
                     <ChevronDownIcon className="h-4 w-4" />
 
@@ -44,7 +61,7 @@ const Banner = () => {
                     
 
 
-                </div>
+                </div> 
                 
 
             </div>

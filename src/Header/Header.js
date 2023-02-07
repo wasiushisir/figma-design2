@@ -34,12 +34,16 @@ const Header = () => {
     <div className='w-screen h-[72px] fixed z-10 bg-[#FFFFFF]  drop-shadow-[0_3px_5px_rgba(0,0,0,0.07)]'>
 
       <div className='px-[24px] flex justify-between items-center w-full h-full'>
-        <div className='flex items-center'>
+        <div className='flex items-center justify-start md:space-x-6 space-x-12'>
           <div onClick={handleNav} className='w-[35px] h-[35px] bg-[#F0F5FA] flex justify-center items-center rounded-full cursor-pointer'>
             <Bars3BottomLeftIcon className="h-6 w-6 " />
 
           </div>
-          <h1 className='text-[18px] font-bold pl-[16px] md:text-[25px]'>DOKAN BHAI</h1>
+          {/* <h1 className='text-[18px] font-bold pl-[16px] md:text-[25px]'>DOKAN BHAI</h1> */}
+         <div className='flex flex-col justify-between items-center'>
+         <img className='h-[40px] w-[150px]' src="https://brandatoz.com/images/atoz.png" alt="" />
+         <p className='text-[14px]'>Easy Shopping</p>
+         </div>
 
         </div>
 
