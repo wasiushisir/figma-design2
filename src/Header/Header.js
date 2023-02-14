@@ -273,22 +273,23 @@ const Header = () => {
         <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-full border-b-2 border-zinc-300 my-[8px]   " />
         <BellIcon className="h-6 w-full  border-b-2 border-zinc-300  my-[8px]" />
         <ShoppingCartIcon className="h-6 w-full border-b-2 border-zinc-300 my-[8px] " />
-        <button type="button" class="px-6
-      py-2.5
-      bg-[#D1DEEB]
-      
-      font-semibold
-      text-[16px]
-      leading-tight
-      w-full
-      rounded
-      shadow-md
-       text-[#2B333B]
-      transition
-      duration-150
-      ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Log in
-          </button>
+        <Link to='/signup' ><button type="button" class="px-6
+            py-2.5
+            bg-[#D1DEEB]
+            w-full
+            
+            font-semibold
+            text-[16px]
+            leading-tight
+            
+            rounded
+            shadow-md
+             text-[#2B333B]
+            transition
+            duration-150
+            ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Log in
+                </button></Link>
       </div>
 
 
