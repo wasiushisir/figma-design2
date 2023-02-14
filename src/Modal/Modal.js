@@ -59,6 +59,7 @@ const Modal = () => {
 
 
         </div> */}
+        
         <Routes>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

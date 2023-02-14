@@ -7,6 +7,13 @@ import { DocumentTextIcon, ChatBubbleOvalLeftEllipsisIcon, BellIcon, ShoppingCar
 import { VscHome } from 'react-icons/vsc';
 import { useDispatch, useSelector } from 'react-redux';
 import { createList } from '../actions/sidbarAction';
+import {
+  
+  Route,
+  Link,
+  Routes
+ 
+} from "react-router-dom";
 
 
 
@@ -53,22 +60,23 @@ const Header = () => {
           <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6 " />
           <BellIcon className="h-6 w-6 " />
           <ShoppingCartIcon className="h-6 w-6 " />
-          <button type="button" class="px-6
-      py-2.5
-      bg-[#D1DEEB]
-      
-      font-semibold
-      text-[16px]
-      leading-tight
-      
-      rounded
-      shadow-md
-       text-[#2B333B]
-      transition
-      duration-150
-      ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Log in
-          </button>
+          <Link to='/signup' ><button type="button" class="px-6
+            py-2.5
+            bg-[#D1DEEB]
+            
+            font-semibold
+            text-[16px]
+            leading-tight
+            
+            rounded
+            shadow-md
+             text-[#2B333B]
+            transition
+            duration-150
+            ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Log in
+                </button></Link>
+          
           {/* modal */}
 
           {/* <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
