@@ -1,8 +1,24 @@
 import React from 'react';
+import SignUp from '../SignUp/SignUp';
+import {
+  
+  Route,
+  NavLink,
+  Routes
+ 
+} from "react-router-dom";
+import Login from '../Login/Login';
+
+
+
+
+
+
 
 const Modal = () => {
+  let activeClassName = "underline";
     return (
-        <div class="modal fade fixed top-[100px] left-[1000px]  hidden w-[500px] h-full outline-none overflow-x-hidden overflow-y-auto"
+        <div class="modal fade fixed top-[100px] right-[25px] md:left-[600px]   hidden w-[300px] h-full outline-none overflow-x-hidden overflow-y-auto"
   id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog relative w-auto pointer-events-none">
     <div
@@ -16,11 +32,22 @@ const Modal = () => {
       </div>
       <div class="modal-body relative px-[35px] pb-[24px]">
         <div className='flex justify-start items-center text-[20px] text-[#2B333B] space-x-6 font-medium'>
-          <p>Log in</p>
+        <NavLink to="/login"
+        className={({ isActive }) =>
+              isActive ? 'border-b-2 border-[#DE3D3A]' : undefined
+            }>
+      
+          <p>Login</p>
+      </NavLink>
+          
+          <NavLink to="/signup" className={({ isActive }) =>
+              isActive ? 'border-b-2 border-[#DE3D3A]' : undefined
+            }>
           <p>Signup</p>
+      </NavLink>
 
         </div>
-        <h1 className='text-3xl font-semibold my-[24px]'>Create Account</h1>
+        {/* <h1 className='text-3xl font-semibold my-[24px]'>Create Account</h1>
         <div className='flex flex-col  space-y-6 '>
           <input className='border-2 border-[#5C738A] w-full rounded-[8px] px-[16px] py-[8px] text-[16px]  text-[#5C738A]' type="text" placeholder='Phone No/Email'/>
           <input className='border-2 border-[#5C738A] w-full rounded-[8px] px-[16px] py-[8px] text-[16px]  text-[#5C738A]' type="text" placeholder='Username'/>
@@ -31,7 +58,11 @@ const Modal = () => {
           
 
 
-        </div>
+        </div> */}
+        <Routes>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        </Routes>
       </div>
       {/* <div
         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4  rounded-b-md">

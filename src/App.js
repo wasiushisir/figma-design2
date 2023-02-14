@@ -14,12 +14,20 @@ import TopSellerrs from './TopSellers/TopSellerrs';
 import Slider from './Slider/Slide';
 import Box from './Box/Box';
 import MonarchSlider from './MonarchSlider/MonarchSlider';
+import {
+  Routes,
+  Route
+ 
+} from "react-router-dom";
 
 
 function App() {
   return (
     <div className="overflow-x-hidden">
+      
+      
       <Header></Header>
+      
       
       
       
@@ -33,6 +41,7 @@ function App() {
       <TopSellerrs></TopSellerrs>
     
       <ProductsForYou></ProductsForYou>
+      
       <Footer></Footer>
       
       
