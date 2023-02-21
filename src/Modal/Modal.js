@@ -4,10 +4,12 @@ import {
   
   Route,
   NavLink,
-  Routes
+  Routes,
+  Outlet
  
 } from "react-router-dom";
 import Login from '../Login/Login';
+import Home from '../Home/Home';
 
 
 
@@ -18,7 +20,7 @@ import Login from '../Login/Login';
 const Modal = () => {
   let activeClassName = "underline";
     return (
-        <div class="modal fade fixed top-[100px] right-[25px] md:left-[600px]   hidden w-[300px] h-full outline-none overflow-x-hidden overflow-y-auto"
+        <div class="modal fade fixed top-[45px] right-[25px] md:left-[600px]   hidden w-[300px] h-full outline-none overflow-x-hidden overflow-y-auto"
   id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog relative w-auto pointer-events-none">
     <div
@@ -32,6 +34,7 @@ const Modal = () => {
       </div>
       <div class="modal-body relative px-[35px] pb-[24px]">
         <div className='flex justify-start items-center text-[20px] text-[#2B333B] space-x-6 font-medium'>
+       
         <NavLink to="/login"
         className={({ isActive }) =>
               isActive ? 'border-b-2 border-[#DE3D3A]' : undefined
@@ -59,50 +62,29 @@ const Modal = () => {
 
 
         </div> */}
+         {/* <SignUp></SignUp>
+         <Login></Login> */}
+          <Routes>
+       
+          
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/signup' element={<SignUp></SignUp>}></Route>
+          
+
         
-        <Routes>
+      </Routes>
+        
+        
+        
+        {/* <Routes>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
-        </Routes>
+        </Routes> */}
       </div>
-      {/* <div
-        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4  rounded-b-md">
-        <button type="button" class="px-6
-          py-2.5
-          bg-purple-600
-          text-white
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          rounded
-          shadow-md
-          hover:bg-purple-700 hover:shadow-lg
-          focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0
-          active:bg-purple-800 active:shadow-lg
-          transition
-          duration-150
-          ease-in-out" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="px-6
-      py-2.5
-      bg-blue-600
-      text-white
-      font-medium
-      text-xs
-      leading-tight
-      uppercase
-      rounded
-      shadow-md
-      hover:bg-blue-700 hover:shadow-lg
-      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg
-      transition
-      duration-150
-      ease-in-out
-      ml-1">Save changes</button>
-      </div> */}
+
     </div>
   </div>
+  <Outlet/>
 </div>
     );
 };

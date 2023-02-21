@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
 import Slider from 'react-slick';
@@ -32,6 +32,7 @@ function SampleNextArrow({onClick,slideCount,currentSlide}) {
 const MonarchSlider = () => {
     const [nav1, setNav1] = useState();
     const [nav2, setNav2] = useState();
+
     
     var settings = {
       dots: false,
@@ -110,6 +111,19 @@ const MonarchSlider = () => {
     }
 
     const state = useSelector((state) =>state.list)
+
+    useEffect(()=>{
+      const content= state.list.map((s)=><>
+      <a href={`https://brandatoz.com/search/category/${s}`} rel="noopener noreferrer">
+      <h1 className='text-black w-[180px] md:w-[200px]  text-center font-bold'>{s}</h1>
+
+
+        </a>
+      
+
+      </>)
+
+    },[])
     
     return (
         <div className='px-[80px] mt-[-430px] md:mt-[90px] '>
@@ -197,7 +211,7 @@ const MonarchSlider = () => {
         
         
             {
-                state.map((s)=><>
+                state.list.map((s)=><>
                 <a href={`https://brandatoz.com/search/category/${s}`} rel="noopener noreferrer">
                 <h1 className='text-black w-[180px] md:w-[200px]  text-center font-bold'>{s}</h1>
 

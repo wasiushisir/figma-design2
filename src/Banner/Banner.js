@@ -17,7 +17,7 @@ import Modal from '../Modal/Modal';
 const Banner = () => {
     return (
        <div>
-        <Modal></Modal>
+        {/* <Modal></Modal> */}
          <div className='pl-[80px] pr-[60px] md:pl-[80px] md:pr-[52px] md:mt-[100px] mt-[34px] md:[60px]'>
             <div className='md:flex justify-between items-center space-y-2 md:space-y-0'>
                 <div className='flex justify-between h-[40px] md:mt-[5px] border border-[#5C738A] rounded-[8px]  bg-[#FFFFFF] w-[230px]   md:w-[760px] mt-[20px]'>

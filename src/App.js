@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from './Header/Header';
 import Banner from './Banner/Banner';
 import Footer from './Footer/Footer';
 import ProductsForYou from './ProductsForYou/ProductsForYou';
 // import FeaturedCategories from '../FeaturedCategories/FeaturedCategories';
- import FeaturedCategories from '../src/FeaturedCategories/FeaturedCategories.js';
+import FeaturedCategories from '../src/FeaturedCategories/FeaturedCategories.js';
 import FlashSale from './FlashSale/FlashSale';
 import HelloMall from './HelloMall/HelloMall';
 import TopSellerrs from './TopSellers/TopSellerrs';
@@ -17,34 +17,39 @@ import MonarchSlider from './MonarchSlider/MonarchSlider';
 import {
   Routes,
   Route
- 
+
 } from "react-router-dom";
+import Home from './Home/Home';
+import Login from './Login/Login';
+import SignUp from './SignUp/SignUp';
+import Modal from './Modal/Modal';
+
 
 
 function App() {
+
+
+
+
   return (
     <div className="overflow-x-hidden">
-      
-      
+
+
       <Header></Header>
-      
-      
-      
-      
-      <Slider></Slider>
-      <MonarchSlider></MonarchSlider>
-      <Banner></Banner>
-      <Box></Box>
-      {/* <FlashSale></FlashSale> */}
-      <FeaturedCategories></FeaturedCategories>
-      <HelloMall></HelloMall>
-      <TopSellerrs></TopSellerrs>
-    
-      <ProductsForYou></ProductsForYou>
-      
+      <Modal></Modal>
+
+      <Routes>
+
+        <Route path='/' element={<Home></Home>}>
+          <Route path='login' element={<Login></Login>}></Route>
+          <Route path='signup' element={<SignUp></SignUp>}></Route>
+        </Route>
+
+
+      </Routes>
       <Footer></Footer>
-      
-      
+
+
     </div>
   );
 }
