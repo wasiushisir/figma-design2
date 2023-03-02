@@ -18,11 +18,21 @@ import {
 
 } from "react-router-dom";
 import { signout } from '../actions/authAction';
+import Modal from '../Modal/Modal';
 
 
 
 
-const Header = () => {
+const Header = ({modalOpen,setModalOpen}) => {
+  // const [modalOpen, setModalOpen] = useState(false);
+
+  
+ 
+  // const modals=()=>{
+  //   setModalOpen(true)
+  //   console.log('kkk')
+  // }
+ 
 
   const dispatch = useDispatch()
   const state = useSelector((state) => state?.list?.list)
@@ -75,9 +85,13 @@ const Header = () => {
 
 
   return (
-    <div className='w-screen h-[72px] fixed z-10 bg-[#FFFFFF]  drop-shadow-[0_3px_5px_rgba(0,0,0,0.07)]'>
 
-      <div className='px-[24px] flex justify-between items-center w-full h-full'>
+
+    
+    <div className='w-screen h-[72px] fixed z-10 bg-[#FFFFFF]  drop-shadow-[0_3px_5px_rgba(0,0,0,0.07)]'>
+    {modalOpen&&<Modal setOpenModal={setModalOpen}></Modal>}
+
+      <div className='px-[24px] flex justify-between items-center w-full h-full '>
         <div className='flex items-center justify-start md:space-x-6 space-x-12'>
           <div onClick={handleNav} className='w-[35px] h-[35px] bg-[#F0F5FA] flex justify-center items-center rounded-full cursor-pointer'>
             <Bars3BottomLeftIcon className="h-6 w-6 " />
@@ -108,7 +122,7 @@ const Header = () => {
          flex-col bg-white drop-shadow-lg">
             <a onClick={signOutHandler}  class="px-5 py-3 hover:bg-gray-200 mt-[50px]" href="#">Sign Out</a>
             
-        </div></div> </div></>) || <Link to='/login'><button type="button" class="px-6
+        </div></div> </div></>) || <Link to='/login'><button onClick={()=>setModalOpen(true)}   type="button" class="px-6
             py-2.5
             bg-[#D1DEEB]
             
@@ -121,11 +135,13 @@ const Header = () => {
              text-[#2B333B]
             transition
             duration-150
-            ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            ease-in-out" >
             Log in
           </button></Link>}
 
           {/* modal */}
+
+          
 
        
 
@@ -134,6 +150,8 @@ const Header = () => {
 
 
         </div>
+
+       
 
         <div onClick={() => setNav2(!nav2)} className='md:hidden'>
 
@@ -214,7 +232,7 @@ const Header = () => {
             
             rounded
             shadow-md
-             text-[#2B333B] hover:bg-gray-200 md:mt-[50px]'>SignOut</button> </a>  :<Link to='/login' ><button type="button" class="px-6
+             text-[#2B333B] hover:bg-gray-200 md:mt-[50px]'>SignOut</button> </a>  :<Link to='/login' ><button onClick={()=>setModalOpen(true)}  type="button" class="px-6
             py-2.5
             bg-[#D1DEEB]
             w-full

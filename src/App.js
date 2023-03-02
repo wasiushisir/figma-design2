@@ -23,33 +23,43 @@ import Home from './Home/Home';
 import Login from './Login/Login';
 import SignUp from './SignUp/SignUp';
 import Modal from './Modal/Modal';
+import { useState } from 'react';
 
 
 
 function App() {
+  const [toggle, setToggle] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
+
 
 
 
 
   return (
-    <div className="overflow-x-hidden">
+    <div>
+      <div className="overflow-x-hidden ">
 
 
-      <Header></Header>
-      <Modal></Modal>
 
-      <Routes>
-
-        <Route path='/' element={<Home></Home>}>
-          <Route path='login' element={<Login></Login>}></Route>
-          <Route path='signup' element={<SignUp></SignUp>}></Route>
-        </Route>
+        <Header modalOpen={modalOpen} setModalOpen={setModalOpen}></Header>
 
 
-      </Routes>
-      <Footer></Footer>
 
 
+
+        <Routes>
+
+          <Route path='/' element={<Home></Home>}>
+            <Route path='login' element={<Login ></Login>}></Route>
+            <Route path='signup' element={<SignUp></SignUp>}></Route>
+          </Route>
+
+
+        </Routes>
+        <Footer></Footer>
+
+
+      </div>
     </div>
   );
 }

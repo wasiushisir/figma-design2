@@ -5,7 +5,7 @@ import { register } from '../actions/authAction';
 
 
 
-const SignUp = () => {
+const SignUp = ({setOpenModal}) => {
   const navigate=useNavigate()
 
 
@@ -55,6 +55,8 @@ const SignUp = () => {
 
   const onSubmit=(e)=>{
     e.preventDefault()
+    setOpenModal(false);
+    
    
    
     

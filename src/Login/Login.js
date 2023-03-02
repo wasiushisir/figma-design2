@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { signin } from '../actions/authAction';
 
 
-const Login = () => {
+const Login = ({setOpenModal}) => {
+  // console.log(toggle)
   const navigate = useNavigate()
   
   const {userInfo,loading2} = useSelector((state) => state?.userSignin);
@@ -20,15 +21,7 @@ const Login = () => {
 
 
 
-  // console.log(userInfo)
   
-  // useEffect(()=>{
-  //   if(userInfo){
-  //    navigate('/')
-  //   console.log('oops')
-  //   }
-  
-  // },[userInfo,navigate])
   const [formData, setFormData] = useState({
 
     phnNo: '',
@@ -53,6 +46,8 @@ const Login = () => {
   const dispatch=useDispatch()
   const onSubmit = (e) => {
     e.preventDefault()
+   
+    setOpenModal(false);
 
 
 
@@ -68,6 +63,7 @@ const Login = () => {
 
 
   }
+  // console.log(toggle)
 
 
   if(loading2){
