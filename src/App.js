@@ -24,6 +24,8 @@ import Login from './Login/Login';
 import SignUp from './SignUp/SignUp';
 import Modal from './Modal/Modal';
 import { useState } from 'react';
+import ShopType from './ShopType/ShopType';
+import Seller from './Seller/Seller';
 
 
 
@@ -53,6 +55,9 @@ function App() {
             <Route path='login' element={<Login ></Login>}></Route>
             <Route path='signup' element={<SignUp></SignUp>}></Route>
           </Route>
+          <Route path='/shoptype/:name' element={<ShopType></ShopType>}></Route>
+          <Route path='/seller/:id' element={<Seller></Seller>}></Route>
+
 
 
         </Routes>

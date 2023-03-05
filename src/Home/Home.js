@@ -12,6 +12,7 @@ import {
     Route
    
   } from "react-router-dom";
+import ShoppingCoplex from '../ShoppingComplex/ShoppingCoplex';
 
 const Home = () => {
     return (
@@ -32,6 +33,7 @@ const Home = () => {
      <Slider></Slider>
       <MonarchSlider></MonarchSlider>
       <Banner></Banner>
+      <ShoppingCoplex></ShoppingCoplex>
       <Box></Box>
       
       <FeaturedCategories></FeaturedCategories>
