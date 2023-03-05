@@ -55,7 +55,7 @@ const ShopType = () => {
 
 
 
-                <div className='mt-[40px] pl-[20px] pr-[17px] md:pl-[0px] md:pr-[0px] grid grid-cols-2 md:grid-cols-5 gap-y-8 '>
+                <div className='mt-[40px] pl-[20px] pr-[17px] md:pl-[0px] md:pr-[0px] grid grid-cols-2 md:grid-cols-5 gap-5 '>
                     {
                         filterFloor.map((s) => <><div onClick={() => shopClick(s._id)} className='cursor-pointer  w-[152px]  md:w-[218px] md:h-max rounded-[8px] bg-[#FFFFFF] '>
                             <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={`https://brandatoz.com${s?.seller?.logo.split(",")[0]}`} alt="" />
