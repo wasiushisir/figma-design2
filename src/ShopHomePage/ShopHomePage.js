@@ -66,7 +66,7 @@ const ShopHomePage = () => {
 
                             <div className='flex  justify-between items-center my-[20px] md:hidden'>
                                 <div>
-                                    <div className=' flex justify-between items-center px-[65px] py-[8px] bg-blue-700 space-x-1 text-white rounded-[4px]'>
+                                    <div className=' flex justify-between items-center px-[55px] py-[8px] bg-blue-700 space-x-1 text-white rounded-[4px]'>
                                        
                                         <GiShoppingBag className='' size={20} />
                                         <p>View shop</p>
@@ -74,7 +74,7 @@ const ShopHomePage = () => {
                                     </div>
 
                                 </div>
-                                <div className='px-[20px] py-[8px] bg-[#454545] flex justify-center items-center rounded-[4px]'>
+                                <div className='px-[15px] py-[8px] bg-[#454545] flex justify-center items-center rounded-[4px]'>
                                 <RiMessengerFill className='text-white' size={20} />
 
                                 </div>
@@ -106,7 +106,7 @@ const ShopHomePage = () => {
 
 
                         <div className='hidden md:flex justify-between items-center md:px-[10px] md:mt-[15px]' >
-                            <div className='flex justify-start items-center  space-x-5 text-slate-400 font-semibold'>
+                            <div className='flex justify-start items-center space-x-1   md:space-x-5 text-slate-400 font-semibold'>
                                 <p>Home</p>
                                 <p>Events</p>
                                 <p>Photos</p>
