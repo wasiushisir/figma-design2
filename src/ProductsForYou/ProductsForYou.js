@@ -9,191 +9,60 @@ import img7 from '../image/toy2-1531693251400-38df35776dc7.jpg'
 import img8 from '../image/toy3-1583309600560-6d3d0c432939.jpg'
 import img9 from '../image/strawberryjuice-1568909344668-6f14a07b56a0.jpg'
 import img10 from '../image/mangojuice-1600271886742-f049cd451bba.jpg'
+import './ProductsForYou.css'
+
+
+import { useQuery } from 'react-query';
+import SingleForYouProduct from '../SingleForYouProduct/SingleForYouProduct';
 
 const ProductsForYou = () => {
+
+
+
+
+    const { isLoading, error, data: allProducts } = useQuery('products', () =>
+    fetch('https://backend.dokanbhai.dokanbhai.com:3002/api/products/all_products').then(res =>
+        res.json()
+    )
+)
+
+if (isLoading) {
+    return <div class="flex items-center justify-center">
+    <div
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+  </div>
+}
+
+
+
+const forYouProducts = allProducts.products.slice(0, 16);
+
     return (
-        <div className='mt-[80px] md:pl-[80px] md:pr-[170px] '>
-        <h1 className='md:text-[39px] text-[25px] font-semibold text-center md:text-justify'>Products For You</h1>
-        <div className='mt-[40px] pl-[20px] pr-[17px] md:pl-[0px] md:pr-[0px] grid grid-cols-2 md:grid-cols-5 gap-y-8'>
-            <div className='w-[152px]  md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img1} alt="" />
-                <div className='mx-[16px] mt-[16px] '>
-                    <p className='text-base font-normal '>Sem turpis eu pulvinar..</p>
-                    <span className='font-semibold text-[13px]'>Sit tempus.</span>
-
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
+   
 
 
-                    </div>
+   
 
-                </div>
+    <div className='products-for-container'>
+    <h2 className='section-title'>Products For You</h2>
 
-            </div>
+    <div className="for-you-products">
+        {
+            allProducts.products.slice(0, 16).map(product => <SingleForYouProduct
+                key={product._id}
+                product={product}
+            ></SingleForYouProduct>)
+        }
 
-
-            <div className='w-[152px]  md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img2} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Consequat facilisi dui fermentum tincidunt.</p>
-                    <span className='font-semibold text-[13px]'>Sit eu.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img3} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Parturient aenean mollis tristique.</p>
-                    <span className='font-semibold text-[13px]'>Urna.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img4} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Platea eget viverra nec vel et fringilla.</p>
-                    <span className='font-semibold text-[13px]'>Purus.</span>
-                    <div className='flex justify-start items-center space-x-2.5 mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img5} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Quam lectus nibh in..</p>
-                    <span className='font-semibold text-[13px]'>Dictum.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img6} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Faucibus aliquam.</p>
-                    <span className='font-semibold text-[13px]'>Integer.</span>
-                    <div className='mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img7} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Sit velit justo in pharetra feugiat amet.</p>
-                    <span className='font-semibold text-[13px]'>Cursus mi.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img8} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Et tristique aliquam nullam nulla sed risus.</p>
-                    <span className='font-semibold text-[13px]'>Sapien.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img9} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Duis egestas nunc volutpat nullam.</p>
-                    <span className='font-semibold text-[13px]'>Viverra.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div className='w-[152px] md:w-[212px] md:h-[368px] rounded-[8px] bg-[#FFFFFF] '>
-                <img className='h-[196px] md:w-[196px] w-[136px] rounded-[8px] mx-[8px] mt-[8px]' src={img10} alt="" />
-                <div className='mx-[16px] mt-[16px]'>
-                    <p className='text-base font-normal'>Sed interdum mauris.</p>
-                    <span className='font-semibold text-[13px]'>Sed.</span>
-                    <div className=' mt-[32px] '>
-                        {/* <BuildingOfficeIcon className="h-6 w-6 text-[#5C738A]" /> */}
-                        <p className='text-[25px] text-[#2B333B]'>$130</p>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            
-
-
-            
-
-
-            
-
-        </div>
-
-        <div className='mt-[40px] flex justify-center mb-[80px]'>
-            <div className='px-[28px] py-[3px] md:py-[4px]  md:px-[62px] bg-[#D1DEEB] rounded-[8px]'>
-                <p className='text-[#2B333B] text-[16px] font-medium'>Load More</p>
-            </div>
-        </div>
 
     </div>
+</div>
     );
 };
 

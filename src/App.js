@@ -26,6 +26,10 @@ import Modal from './Modal/Modal';
 import { useState } from 'react';
 import ShopType from './ShopType/ShopType';
 import Seller from './Seller/Seller';
+import SingleProductDetails from './ProductsForYou/SingleProductDetails/SingleProductDetails';
+import Shop from './Shop/Shop';
+import AllProducts from './Shop/AllProducts/AllProducts';
+import Profile from './Shop/Profile/Profile';
 
 
 
@@ -56,7 +60,16 @@ function App() {
             <Route path='signup' element={<SignUp></SignUp>}></Route>
           </Route>
           <Route path='/shoptype/:name' element={<ShopType></ShopType>}></Route>
-          <Route path='/seller/:id' element={<Seller></Seller>}></Route>
+          
+          <Route path='details/:id' element={<SingleProductDetails></SingleProductDetails>}></Route>
+
+          <Route path='/shop' element={<Shop></Shop>}>
+          <Route path='seller/:id' element={<Seller></Seller>}></Route>
+          <Route path='products' element={<AllProducts></AllProducts>}></Route>
+          <Route path='profile' element={<Profile></Profile>}></Route>
+
+
+          </Route>
 
 
 

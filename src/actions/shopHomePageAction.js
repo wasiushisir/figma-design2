@@ -8,7 +8,7 @@ export const createShopHomePAge=(id)=>async(dispatch,getState)=>{
  
     if(data){
  
-     dispatch({type:SHOPHOMEPAGEUSER,payload:data})
+     dispatch({type:SHOPHOMEPAGEUSER,payload: {  data, id: id }})
      
     }
  

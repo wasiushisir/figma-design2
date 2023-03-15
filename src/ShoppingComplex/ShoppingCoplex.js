@@ -19,7 +19,7 @@ const ShoppingCoplex = () => {
 
     const shopCard=(name)=>{
 
-        dispatch(filterShop(name))
+         dispatch(filterShop(name))
         navigate(`/shoptype/${name}`)
         
         

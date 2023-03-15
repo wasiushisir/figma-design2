@@ -3,7 +3,8 @@ import { SHOPHOMEPAGEUSER } from "../constants/shopHomePageConstant";
 
 
 const initialstate={
-    user:[]
+    user:[],
+    id:''
 }
 
 
@@ -14,7 +15,8 @@ const shopHompageReducer=(state=initialstate,actions)=>{
 
         return{
             ...state,
-            user:[actions.payload]
+            user:[actions.payload.data],
+            id: actions.payload.id
 
         }
         default:

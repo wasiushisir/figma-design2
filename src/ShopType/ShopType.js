@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getProducts } from '../actions/productsAction';
 import { createShopHomePAge } from '../actions/shopHomePageAction';
 
@@ -8,10 +8,12 @@ const ShopType = () => {
     const state = useSelector((state) => state?.shoppingComplex?.FilteredShop)
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    
     const shopClick = (id) => {
-        dispatch(createShopHomePAge(id))
-        dispatch(getProducts(id))
-        navigate(`/seller/${id}`)
+        // dispatch(createShopHomePAge(id))
+        // dispatch(getProducts(id))
+         navigate(`/shop/seller/${id}`)
+       
 
 
 

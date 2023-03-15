@@ -29,7 +29,9 @@ export const shopList=()=>async(dispatch,getState)=>{
 
 
 export const filterShop=(name)=>{
+    console.log(name)
     return{
+       
         type:SHOP_FILTER,
         payload:{
             name

@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import  { userRegisterReducer, userSigninReducer } from "./authReducer";
+import productsForYouReducer from "./productsForYouReducer";
 import productsReducer from "./productsReducer";
 import shopHompageReducer from "./shopHomePageReducer";
 import { shoppingComplexReducer } from "./shoppingComplexReducer";
@@ -13,7 +14,8 @@ const rootReducer=combineReducers({
     userRegister:userRegisterReducer,
     shoppingComplex:shoppingComplexReducer,
     user:shopHompageReducer,
-    productsReducer:productsReducer
+    productsReducer:productsReducer,
+    productsForYou: productsForYouReducer
 })
 
 

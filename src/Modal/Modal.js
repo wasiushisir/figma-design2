@@ -78,7 +78,7 @@ const Modal = ({setOpenModal}) => {
 <div>
 
 <div className="w-full h-screen fixed  flex justify-center z-10  bg-gray-500/50">
-      <div className="h-[650px] w-[350px] border-[12px] bg-white flex flex-col p-[25px] mt-[50px]   border-white">
+      <div className="h-[650px] w-[350px] border-[12px] bg-white flex flex-col p-[25px] mt-[20px]   border-white">
         <div className=" border-none text-[25px]  cursor-pointer flex justify-end">
           <button
             onClick={() => {

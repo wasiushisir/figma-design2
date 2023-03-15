@@ -1,8 +1,13 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProducts } from '../actions/productsAction';
 
-const Products = () => {
+const Products = ({id}) => {
+    const dispatch=useDispatch()
     const state = useSelector((state) => state?.productsReducer?.products?.products)
+    useEffect(()=>{
+        dispatch(getProducts(id))
+    },[dispatch,id])
     return (
         <div className='md:px-[220px] my-[40px] pb-[40px]'>
             <h1 className='text-center text-white text-[25px] my-[30px]'>Products of the Shop</h1>
